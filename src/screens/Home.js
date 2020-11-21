@@ -438,7 +438,9 @@ const Home = ({ navigation }) => {
           <TouchableOpacity
             style={{ flex: 1, flexDirection: "row" }}
             onPress={() => {
-              console.log("Category Pressed");
+              navigation.navigate("BookDetails", {
+                book: item,
+              });
             }}
           >
             {/* Book Cover */}
